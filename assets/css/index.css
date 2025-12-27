@@ -1,3 +1,141 @@
-body {
-    background-color: #0F172A;
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+ body {
+    margin: 0;
+    background-color: #1E2630;
+    min-height: 100vh;
+    font-family: 'Fira Code', monospace;
+}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #4a5568;
+    width: 0%;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    color: #e5e9f0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: #e5e9f0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #88c0d0;
+}
+
+/*
+    SECTIONS
+*/
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.section h2 {
+    color: #e5e9f0;
+    font-size: 32px;
+}
+
+
+/*
+    SOCIAL MEDIA
+*/
+ 
+/* .socials {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+}
+
+.socials a {
+    color: #e5e9f0;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #88c0d0;
+} */
+
+/*
+    RESPONSIVENESS
+*/
+
+/* Tablet */
+@media (max-width: 1024px) {
+    body {
+        box-shadow:
+            inset 80px 0 0 0 #2E3440,
+            inset -80px 0 0 0 #2E3440;
+    }
+    
+    header {
+        padding: 20px 100px;
+    }
+    
+    nav {
+        gap: 24px;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        box-shadow:
+            inset 40px 0 0 0 #2E3440,
+            inset -40px 0 0 0 #2E3440;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 60px;
+    }
+    
+    nav {
+        gap: 16px;
+    }
+    
+    nav a {
+        font-size: 14px;
+    }
+    
+    .logo {
+        font-size: 18px;
+    }
 }

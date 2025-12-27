@@ -18,21 +18,63 @@
 <body>
     <div class="progress-bar"></div>
     <header>
-        <div class = "logo">#Andrew</div>
+        <div class="logo">~/andrew</div>
         <nav>
-            <a href="#home">>Home</a>
-            <a href="#works">>Works</a>
-            <a href="#contacts">>Contacts</a>
+            <a href="#home"><span class="nav-symbol">[</span>home<span class="nav-symbol">]</span></a>
+            <a href="#works"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
+            <a href="#contacts"><span class="nav-symbol">[</span>contacts<span class="nav-symbol">]</span></a>
         </nav>
     </header>
     
 
-    <section class="section" id="home">
-        <h2>#aboutme</h2>
-    </section>
+    <section class="intro" id="home">
+        <div class="intro-left">
+            <h1 class="name">Andrew Barte</h1>
+            <p class="role">Aspiring IT Professional</p>
+            <p class="tagline">
+                <span id="typing"></span><span class="cursor">_</span>
+            </p>
+            <div class="socials" id="socials">
+                <a href="https://github.com/DeGrozer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://codepen.io/" target="_blank"><i class="fab fa-codepen"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
 
-    <section class="section" id="home">
-        <h2>#home</h2>
+            </div>
+        </div>
+
+        <div class="terminal-window" id="terminal">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">andrew@dev:~</span>
+            </div>
+            <div class="terminal-body">
+                <p class="terminal-cmd"><span class="prompt">$</span> about.me</p>
+                <div class="terminal-output">
+                    <pre class="ascii-art">
+    ___              __                   
+   /   |  ____  ____/ /_______  _      __ 
+  / /| | / __ \/ __  / ___/ _ \| | /| / / 
+ / ___ |/ / / / /_/ / /  /  __/| |/ |/ /  
+/_/  |_/_/ /_/\__,_/_/   \___/ |__/|__/   
+                    </pre>
+                    <div class="system-info">
+                        <p><span class="label">OS:</span> Web Developer v2.0</p>
+                        <p><span class="label">Host:</span> Philippines</p>
+                        <p><span class="label">Uptime:</span> 20+ years</p>
+                        <p><span class="label">Shell:</span> bash</p>
+                        <p><span class="label">Status:</span> <span class="status-available">● available</span></p>
+                        <p><span class="label">Focus:</span> OJT prep</p>
+                        <p><a href = ""><span class="label">Read More:</a></p>
+
+                    </div>
+                </div>
+                <!-- <p class="terminal-cmd"><span class="prompt">$</span> <span class="terminal-cursor">_</span></p> -->
+            </div>
+        </div>
     </section>
 
     <section class="section" id="works">
@@ -49,13 +91,6 @@
         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
     </div> -->
 
-<script>
-    window.addEventListener('scroll', () => {
-        const scrollTop = document.documentElement.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const progress = (scrollTop / scrollHeight) * 100;
-        document.querySelector('.progress-bar').style.width = progress + '%';
-    });
-</script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

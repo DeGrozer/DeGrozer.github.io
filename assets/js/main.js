@@ -33,4 +33,48 @@ function type() {
 
 window.addEventListener("load", () => {
     setTimeout(type, 500);
+    updateUptime();
+    setInterval(updateUptime, 1000);
 });
+
+// ========================================
+// UPTIME CALCULATOR
+// ========================================
+function updateUptime() {
+    const birthDate = new Date(2003, 10, 5, 4, 0, 0); // November 5, 2003, 4:00 AM
+    const now = new Date();
+    
+    let years = now.getFullYear() - birthDate.getFullYear();
+    let months = now.getMonth() - birthDate.getMonth();
+    let days = now.getDate() - birthDate.getDate();
+    let hours = now.getHours() - birthDate.getHours();
+    let minutes = now.getMinutes() - birthDate.getMinutes();
+    let seconds = now.getSeconds() - birthDate.getSeconds();
+    
+    // Adjust for negative values
+    if (seconds < 0) {
+        seconds += 60;
+        minutes--;
+    }
+    if (minutes < 0) {
+        minutes += 60;
+        hours--;
+    }
+    if (hours < 0) {
+        hours += 24;
+        days--;
+    }
+    if (days < 0) {
+        days += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+        months--;
+    }
+    if (months < 0) {
+        months += 12;
+        years--;
+    }
+    
+    const uptimeSpan = document.getElementById("uptime");
+    if (uptimeSpan) {
+        uptimeSpan.textContent = `${years}y ${months}mo ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+}

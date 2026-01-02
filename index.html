@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <!-- SOCIAL MEDIA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -21,6 +22,7 @@
         <div class="logo">~/andrew</div>
         <nav>
             <a href="#home"><span class="nav-symbol">[</span>home<span class="nav-symbol">]</span></a>
+            <a href="#home"><span class="nav-symbol">[</span>about me<span class="nav-symbol">]</span></a>
             <a href="#works"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
             <a href="#contacts"><span class="nav-symbol">[</span>contacts<span class="nav-symbol">]</span></a>
         </nav>
@@ -36,10 +38,10 @@
             </p>
             <div class="socials" id="socials">
                 <a href="https://github.com/DeGrozer" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
                 <a href="https://codepen.io/" target="_blank"><i class="fab fa-codepen"></i></a>
-                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> -->
 
             </div>
         </div>
@@ -54,18 +56,10 @@
             <div class="terminal-body">
                 <p class="terminal-cmd"><span class="prompt">$</span> about.me</p>
                 <div class="terminal-output">
-                    <pre class="ascii-art">
- _   _      _ _        
-| | | |    | | |       
-| |_| | ___| | | ___   
-|  _  |/ _ \ | |/ _ \  
-| | | |  __/ | | (_) | 
-\_| |_/\___|_|_|\___/  
-                    </pre>
                     <div class="system-info">
                         <p><span class="label">OS:</span> Web Developer v2.0</p>
                         <p><span class="label">Host:</span> Bula, Philippines</p>
-                        <p><span class="label">Uptime:</span> 20+ years</p>
+                        <p><span class="label">Uptime:</span> <span id="uptime">calculating...</span></p>
                         <p><span class="label">Shell:</span> bash</p>
                         <p><span class="label">Status:</span> <span class="status-available">● available</span></p>
                         <p><span class="label">Focus:</span> OJT prep</p>
@@ -76,6 +70,70 @@
             </div>
         </div>
     </section>
+
+<section class="quote-section">
+    <p class="quote-label">words I live by</p>
+    <a href="https://undertale.com" target="_blank" class="quote-link">
+        <p class="quote-text">"Despite everything, it's still you."</p>
+        <p class="quote-source">— Undertale</p>
+    </a>
+</section>
+
+ <section class="about-section" id="aboutme">
+    <div class="about-container">
+        <div class="about-left">
+            <div class="profile-pic">
+                <!-- Replace with your image: -->
+                <img src="/assets/images/profile.png" alt="Andrew Barte">
+            </div>
+        </div>
+        <div class="about-content">
+            <p class="about-intro">Hi, I'm Andrew</p>
+            
+            <p class="about-text">
+                I'm a 22-year-old IT student at Camarines Sur Polytechnic Colleges, obsessed with building things on the web and understanding how systems work.
+            </p>
+            
+            <p class="about-text">
+                I've been curious about computers and the internet for years—from playing around with programs to making it my path. These days, I'm diving into web development, UI/UX, and cybersecurity through hands-on learning and side projects.
+            </p>
+            
+            <p class="about-text">
+                Outside code, I write, edit videos, and do volleyball-related things (analysis, and a website for volleyball ranking visualization). I also blog and contribute as a Wikipedia editor.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Interests section -->
+<section class="interests-section" id="interests">
+    <div class="interest-group">
+        <p class="section-label">games I enjoy</p>
+        <div class="interest-container games-grid">
+            <a href="https://www.leagueoflegends.com/" target="_blank" class="interest-item">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg" alt="Lux" title="League of Legends">
+                <span>LoL</span>
+            </a>
+            <a href="https://undertale.com/" target="_blank" class="interest-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OCNBv-W2cgQOeLlkCj9YtCHkrINw9IQxkg&s" alt="Undertale" title="Undertale">
+                <span>Undertale</span>
+            </a>
+            <a href="https://www.ea.com/games/peggle" target="_blank" class="interest-item">
+                <img src="https://cdn2.unrealengine.com/header-1920x1080-2021ff7035d9.jpg" alt="Peggle" title="Peggle">
+                <span>Peggle</span>
+            </a>
+
+            <a href="https://mario.nintendo.com/" target="_blank" class="interest-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Super_Mario_Bros._box.png/220px-Super_Mario_Bros._box.png" alt="Super Mario" title="Super Mario Bros">
+                <span>Mario</span>
+            </a>
+            <a href="https://tetris.com/" target="_blank" class="interest-item">
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2014_23/493611/tetris2.jpg" alt="Tetris" title="Tetris">
+                <span>Tetris</span>
+            </a>
+        </div>
+    </div>
+</section>
 
     <section class="section" id="works">
         <h2>#works</h2>

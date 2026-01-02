@@ -609,6 +609,118 @@ nav a .nav-symbol {
 }
 
 /* ========================================
+   TECH STACK SECTION
+======================================== */
+.tech-section {
+    padding: var(--space-xl) var(--padding-desktop);
+}
+
+.tech-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.tech-group {
+    text-align: center;
+}
+
+.tech-group .section-label {
+    font-size: 11px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: var(--space-lg);
+    opacity: 0.7;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-muted);
+    background: transparent;
+    transition: all var(--transition-normal);
+    cursor: default;
+}
+
+.tech-item i:first-child {
+    font-size: 24px;
+    transition: color var(--transition-normal);
+}
+
+.tech-item:hover {
+    border-color: var(--brand-color, var(--accent));
+    color: var(--text-primary);
+    background: rgba(136, 192, 208, 0.05);
+    box-shadow: 0 0 12px color-mix(in srgb, var(--brand-color, var(--accent)) 40%, transparent);
+}
+
+.tech-item:hover i:first-child {
+    color: var(--brand-color, var(--accent));
+}
+
+.tech-disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-muted);
+    opacity: 0.6;
+    margin-top: var(--space-lg);
+}
+
+.tech-disclaimer .gray-box {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px dashed var(--text-muted);
+    border-radius: 4px;
+    opacity: 0.7;
+}
+
+/* Under construction / still learning */
+.tech-item.learning {
+    border-style: dashed;
+    opacity: 0.7;
+}
+
+.tech-item.learning i {
+    font-size: 10px;
+    margin-left: 6px;
+    color: #ebcb8b;
+}
+
+.tech-item.learning:hover {
+    opacity: 1;
+    border-color: #ebcb8b;
+    color: #ebcb8b;
+    box-shadow: 0 0 10px rgba(235, 203, 139, 0.3);
+}
+
+/* Responsive tech */
+@media (max-width: 768px) {
+    .tech-item {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* ========================================
    WORKS SECTION - Console Style
 ======================================== */
 .works-section {

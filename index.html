@@ -22,7 +22,7 @@
         <div class="logo">~/andrew</div>
         <nav>
             <a href="#home"><span class="nav-symbol">[</span>home<span class="nav-symbol">]</span></a>
-            <a href="#home"><span class="nav-symbol">[</span>about me<span class="nav-symbol">]</span></a>
+            <a href="#aboutme"><span class="nav-symbol">[</span>about me<span class="nav-symbol">]</span></a>
             <a href="#works"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
             <a href="#contacts"><span class="nav-symbol">[</span>contacts<span class="nav-symbol">]</span></a>
         </nav>
@@ -135,9 +135,68 @@
     </div>
 </section>
 
-    <section class="section" id="works">
-        <h2>#works</h2>
-    </section>
+<!-- Works Section -->
+<section class="works-section" id="works">
+    <div class="works-transition">
+        <span class="transition-line">// ──────────────────────────────────────────</span>
+        <span class="transition-text">cd ~/projects</span>
+        <span class="transition-line">// ──────────────────────────────────────────</span>
+    </div>
+    
+    <div class="works-container">
+        <div class="terminal-header-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">projects@portfolio:~/works</span>
+        </div>
+        
+        <div class="works-content">
+            <p class="console-prompt"><span class="prompt-symbol">$</span> ls -la ./projects</p>
+            
+            <div class="project-cards">
+                <a href="#" class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-folder"></i>
+                        <span class="card-title">Project Name</span>
+                    </div>
+                    <p class="card-desc">Brief project description.</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-folder"></i>
+                        <span class="card-title">Another Project</span>
+                    </div>
+                    <p class="card-desc">Another project description.</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">API</span>
+                    </div>
+                </a>
+                
+                <a href="#" class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-folder"></i>
+                        <span class="card-title">More Work</span>
+                    </div>
+                    <p class="card-desc">What you learned building it.</p>
+                    <div class="card-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node</span>
+                    </div>
+                </a>
+            </div>
+            
+            <p class="console-output"><span class="output-count">3</span> projects found.</p>
+        </div>
+    </div>
+</section>
 
     <section class="section" id="contacts">
         <h2>#contacts</h2>

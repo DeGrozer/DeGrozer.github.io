@@ -237,7 +237,7 @@
             <p class="console-prompt"><span class="prompt-symbol">$</span> ls -la ./projects</p>
             
             <div class="project-cards">
-                <a href="https://github.com/DeGrozer/Holocaust-Educational-Website" target="_blank" class="project-card">
+                <a href="#" class="project-card" onclick="event.preventDefault(); openProjectModal('holocaust-website')">
                     <div class="card-preview">
                         <img src="https://opengraph.githubassets.com/1/DeGrozer/Holocaust-Educational-Website" alt="Holocaust Educational Website Preview">
                     </div>
@@ -252,7 +252,7 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JS</span>
                         </div>
-                        <span class="read-more">View on GitHub <i class="fas fa-external-link-alt"></i></span>
+                        <span class="read-more">View Details <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
                 
@@ -293,6 +293,50 @@
     <section class="section" id="contacts">
         <h2>#contacts</h2>
     </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <button class="modal-dot red" onclick="closeProjectModal()" title="Close"></button>
+                <button class="modal-dot green" onclick="toggleMaximizeModal()" title="Maximize"></button>
+                <span class="modal-title">project_preview</span>
+            </div>
+            
+            <div class="modal-body" id="modalBody">
+                <div class="modal-preview">
+                    <img id="modalProjectImage" src="" alt="Project Preview">
+                </div>
+                
+                <div class="modal-info">
+                    <div class="modal-header-info">
+                        <div>
+                            <h2 id="modalProjectTitle" class="modal-project-title"></h2>
+                            <p id="modalProjectSubtitle" class="modal-project-subtitle" style="display: none;"></p>
+                        </div>
+                    </div>
+                    
+                    <p id="modalProjectDesc" class="modal-project-desc"></p>
+                    
+                    <div id="modalLearningsSection" class="modal-learnings-section" style="display: none;">
+                        <p class="modal-learnings-label">Key Learnings:</p>
+                        <ul id="modalProjectLearnings" class="modal-learnings-list"></ul>
+                    </div>
+                    
+                    <div class="modal-tags" id="modalProjectTags"></div>
+                    
+                    <div class="modal-buttons">
+                        <a id="modalProjectUrl" href="#" target="_blank" class="modal-button">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Visit Project
+                        </a>
+                        <a id="modalProjectGithub" href="#" target="_blank" class="modal-button modal-button-secondary" style="display: none;">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- <div class="socials">
         <a href="#" target="_blank"><i class="fab fa-github"></i></a>

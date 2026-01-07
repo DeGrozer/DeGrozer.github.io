@@ -97,6 +97,20 @@ const projectData = {
         github: 'https://github.com/DeGrozer/Holocaust-Educational-Website',
         deployed: 'https://degrozer.github.io/Holocaust-Educational-Website/',
         tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    'volleyball-world-rankings': {
+        title: 'Volleyball World Rankings',
+        subtitle: 'Data visualization project',
+        description: 'An interactive site that displays global volleyball rankings with clear tables and country flags, optimized for quick scan and responsive viewing.',
+        learnings: [
+            'Rendering dynamic data tables with vanilla JavaScript',
+            'Responsive layout for wide tables on mobile',
+            'Using GitHub Pages for static site hosting'
+        ],
+        image: 'https://opengraph.githubassets.com/1/DeGrozer/volleyball-world-rankings',
+        github: 'https://github.com/DeGrozer/volleyball-world-rankings',
+        deployed: 'https://degrozer.github.io/volleyball-world-rankings/',
+        tags: ['HTML', 'CSS', 'JavaScript']
     }
 };
 

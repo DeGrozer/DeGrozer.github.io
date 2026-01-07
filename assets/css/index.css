@@ -1,3 +1,30 @@
+.extra-goals {
+    margin-top: var(--space-xl);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(136, 192, 208, 0.04);
+    border: 1px dashed var(--accent);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    text-align: left;
+}
+.goals-title {
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.goals-title i {
+    color: var(--accent);
+}
+.goals-desc {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin: 0;
+}
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 /* ========================================

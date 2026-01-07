@@ -100,8 +100,8 @@ const projectData = {
     },
     'volleyball-world-rankings': {
         title: 'Volleyball World Rankings',
-        subtitle: 'Data visualization project',
-        description: 'An interactive site that displays global volleyball rankings with clear tables and country flags, optimized for quick scan and responsive viewing.',
+        subtitle: '[WIP: Still in Development] Data visualization Practice',
+        description: 'An interactive site that displays the real time senior volleyball world rankings with clear tables and country flags, optimized for quick scan and responsive viewing.',
         learnings: [
             'Rendering dynamic data tables with vanilla JavaScript',
             'Responsive layout for wide tables on mobile',
@@ -111,6 +111,20 @@ const projectData = {
         github: 'https://github.com/DeGrozer/volleyball-world-rankings',
         deployed: 'https://degrozer.github.io/volleyball-world-rankings/',
         tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    'php-login-system': {
+        title: 'PHP Login System',
+        subtitle: 'Auth flow practice',
+        description: 'Secure login and registration system with session handling, hashed passwords, and form validation built in PHP.',
+        learnings: [
+            'Implementing password hashing and verification',
+            'Session-based auth and access control',
+            'Form validation and error handling in PHP'
+        ],
+        image: 'https://opengraph.githubassets.com/1/DeGrozer/php-login-system',
+        github: 'https://github.com/DeGrozer/php-login-system',
+        deployed: '',
+        tags: ['PHP', 'MySQL', 'Auth']
     }
 };
 

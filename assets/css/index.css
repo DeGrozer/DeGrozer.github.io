@@ -1,3 +1,45 @@
+.contacts-box {
+    margin: 40px auto;
+    max-width: 500px;
+    background: rgba(136, 192, 208, 0.05);
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    box-shadow: 0 2px 8px rgba(30,38,48,0.04);
+}
+.contacts-label {
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+.contacts-list li {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts-list i {
+    color: var(--accent);
+    font-size: 16px;
+    min-width: 18px;
+}
+.contacts-list a {
+    color: var(--accent);
+    text-decoration: underline;
+    transition: color var(--transition-normal);
+}
+.contacts-list a:hover {
+    color: var(--text-primary);
+}
 .extra-goals {
     margin-top: var(--space-xl);
     max-width: 700px;

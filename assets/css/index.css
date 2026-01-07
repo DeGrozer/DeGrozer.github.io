@@ -892,6 +892,47 @@ nav a .nav-symbol {
     color: var(--accent);
 }
 
+/* GitHub CTA box */
+.github-cta {
+    margin-top: var(--space-md);
+    padding: var(--space-md);
+    border: 1px dashed var(--text-muted);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    background: rgba(136, 192, 208, 0.05);
+}
+
+.github-cta .cta-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.github-cta .cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    color: var(--accent);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+}
+
+.github-cta .cta-link:hover {
+    background: rgba(136, 192, 208, 0.1);
+    box-shadow: 0 0 12px rgba(136, 192, 208, 0.2);
+}
+
+@media (max-width: 768px) {
+    .github-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 /* Responsive works */
 @media (max-width: 768px) {
     .project-card {

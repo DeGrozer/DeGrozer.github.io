@@ -509,6 +509,81 @@ nav a .nav-symbol {
 /* ========================================
    INTERESTS SECTION - Games & Movies
 ======================================== */
+/* Personal extra sections */
+.about-extra-section {
+    padding: var(--space-xl) var(--padding-desktop);
+}
+
+.extra-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.extra-title {
+    font-size: 11px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.75;
+}
+
+.extra-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg);
+}
+
+.extra-card {
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    background: rgba(136, 192, 208, 0.04);
+    transition: border-color var(--transition-normal), background var(--transition-normal);
+}
+
+.extra-card:hover {
+    border-color: var(--accent);
+    background: rgba(136, 192, 208, 0.06);
+}
+
+.extra-card-head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.extra-card-head i {
+    color: var(--accent);
+}
+
+.extra-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.extra-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.extra-card ul {
+    margin-top: var(--space-sm);
+    padding-left: 18px;
+    color: var(--text-muted);
+}
+
+.extra-card li {
+    margin: 6px 0;
+}
+
+@media (max-width: 900px) {
+    .extra-grid { grid-template-columns: 1fr; }
+}
 .interests-section {
     padding: var(--space-xl) var(--padding-desktop);
     display: flex;
@@ -527,6 +602,21 @@ nav a .nav-symbol {
     letter-spacing: 3px;
     margin-bottom: var(--space-lg);
     opacity: 0.7;
+}
+
+.interest-box {
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    background: rgba(136, 192, 208, 0.05);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.interest-desc {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 0 0 var(--space-md) 0;
 }
 
 .interest-container {

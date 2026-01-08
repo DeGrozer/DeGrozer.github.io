@@ -359,6 +359,8 @@ nav a .nav-symbol {
     padding: var(--space-lg) var(--padding-desktop);
     padding-bottom: var(--space-2xl);
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .quote-label {
@@ -374,6 +376,8 @@ nav a .nav-symbol {
     display: inline-block;
     text-decoration: none;
     transition: opacity var(--transition-normal);
+    position: relative;
+    z-index: 2;
 }
 
 .quote-link:hover {
@@ -393,6 +397,8 @@ nav a .nav-symbol {
     margin-top: var(--space-xs);
     opacity: 0.6;
 }
+
+/* (Removed ambient quote bubbles for a cleaner look) */
 
 .skills-panel {
     color: var(--text-secondary);

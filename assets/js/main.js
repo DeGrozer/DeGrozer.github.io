@@ -210,3 +210,48 @@ document.addEventListener('keydown', (e) => {
         closeProjectModal();
     }
 });
+
+// ========================================
+// COPY EMAIL FUNCTION
+// ========================================
+function copyEmail(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    
+    const emailText = document.getElementById('emailText').textContent;
+    const emailCard = document.getElementById('emailCard');
+    const toast = document.getElementById('copyToast');
+    
+    const showToast = () => {
+        if (!toast) return;
+        toast.textContent = 'Copied!';
+        toast.classList.add('visible');
+        setTimeout(() => {
+            toast.classList.remove('visible');
+        }, 1400);
+    };
+    
+    const onCopied = () => {
+        emailCard.classList.add('copied');
+        showToast();
+        setTimeout(() => {
+            emailCard.classList.remove('copied');
+        }, 1400);
+    };
+    
+    navigator.clipboard.writeText(emailText).then(onCopied).catch(() => {
+        const textarea = document.createElement('textarea');
+        textarea.value = emailText;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        onCopied();
+    });
+    
+    return false;
+}

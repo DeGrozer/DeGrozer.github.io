@@ -1684,3 +1684,84 @@ nav a .nav-symbol {
         justify-content: flex-start;
     }
 }
+
+/* ========================================
+   FOOTER
+======================================== */
+.site-footer {
+    padding: var(--space-xl) var(--padding-desktop);
+    border-top: 1px solid rgba(136, 192, 208, 0.1);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.retro-heart {
+    color: #ff6b6b;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    animation: heartbeat 1.2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ========================================
+   CV PREVIEW SECTION
+======================================== */
+.cv-preview-section {
+    margin-top: var(--space-2xl);
+    text-align: center;
+}
+
+.cv-preview-wrapper {
+    max-width: 700px;
+    margin: 0 auto var(--space-lg);
+    border: 1px solid var(--text-muted);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #0d1117;
+}
+
+.cv-preview-frame {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.cv-download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--accent);
+    background: transparent;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+}
+
+.cv-download-link:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(136, 192, 208, 0.25);
+}

@@ -125,6 +125,21 @@ const projectData = {
         github: 'https://github.com/DeGrozer/php-login-system',
         deployed: '',
         tags: ['PHP', 'MySQL', 'Auth']
+    },
+    'qr-scanner': {
+        title: 'QR Scanner',
+        subtitle: 'Mobile app with Expo',
+        description: 'A simple QR code scanner app built with React Native and Expo SDK 52. Uses TypeScript and Expo Router for navigation.',
+        learnings: [
+            'Building mobile apps with React Native & Expo',
+            'TypeScript in a mobile development context',
+            'Using device camera APIs for QR scanning',
+            'Expo Router for file-based navigation'
+        ],
+        image: 'https://opengraph.githubassets.com/1/DeGrozer/QRScanner',
+        github: 'https://github.com/DeGrozer/QRScanner',
+        deployed: '',
+        tags: ['React Native', 'Expo', 'TypeScript']
     }
 };
 

@@ -139,7 +139,7 @@ const projectData = {
         image: 'https://opengraph.githubassets.com/1/DeGrozer/QRScanner',
         github: 'https://github.com/DeGrozer/QRScanner',
         deployed: '',
-        tags: ['React Native', 'Expo', 'TypeScript']
+        tags: ['RN', 'Expo', 'TypeScript']
     }
 };
 

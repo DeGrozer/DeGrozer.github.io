@@ -46,6 +46,12 @@
     /* Transitions */
     --transition-fast: 0.1s ease-out;
     --transition-normal: 0.3s ease;
+    
+    /* Retro Terminal */
+    --terminal-green: #33ff33;
+    --terminal-green-dim: rgba(51, 255, 51, 0.15);
+    --terminal-bg: #0a0a0a;
+    --terminal-border: #1a1a1a;
 }
 
 /* ========================================
@@ -865,15 +871,16 @@ nav a .nav-symbol {
     padding: 0 var(--padding-desktop);
 }
 
+/* Retro Terminal */
 .terminal-header-bar {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background: #161b22;
     border: 1px solid var(--text-muted);
     border-bottom: none;
-    border-radius: 8px 8px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 
 .terminal-header-bar .terminal-dot {
@@ -888,15 +895,17 @@ nav a .nav-symbol {
 
 .terminal-header-bar .terminal-title {
     margin-left: auto;
-    font-size: 12px;
-    color: var(--text-muted);
+    font-size: 11px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .works-content {
-    background: var(--terminal-bg);
+    background: #0d1117;
     border: 1px solid var(--text-muted);
     border-top: none;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 6px 6px;
     padding: var(--space-lg);
 }
 
@@ -910,7 +919,6 @@ nav a .nav-symbol {
 .console-prompt .prompt-symbol {
     color: var(--accent);
     margin-right: var(--space-xs);
-    font-weight: 600;
 }
 
 .project-cards {
@@ -927,10 +935,10 @@ nav a .nav-symbol {
     gap: var(--space-sm);
     background: transparent;
     border: 1px solid var(--text-muted);
-    border-radius: 8px;
+    border-radius: 6px;
     padding: var(--space-md);
     text-decoration: none;
-    transition: border-color var(--transition-normal);
+    transition: all var(--transition-normal);
     min-width: 280px;
     max-width: 320px;
     flex-shrink: 0;
@@ -938,6 +946,7 @@ nav a .nav-symbol {
 
 .project-card:hover {
     border-color: var(--accent);
+    background: rgba(136, 192, 208, 0.03);
 }
 
 .card-preview {
@@ -1032,12 +1041,12 @@ nav a .nav-symbol {
     margin-top: var(--space-md);
     padding: var(--space-md);
     border: 1px dashed var(--text-muted);
-    border-radius: 8px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-md);
-    background: rgba(136, 192, 208, 0.05);
+    background: rgba(136, 192, 208, 0.03);
 }
 
 .github-cta .cta-text {
@@ -1051,7 +1060,7 @@ nav a .nav-symbol {
     gap: 8px;
     padding: 8px 14px;
     border: 1px solid var(--accent);
-    border-radius: 6px;
+    border-radius: 4px;
     color: var(--accent);
     text-decoration: none;
     transition: all var(--transition-normal);
@@ -1059,7 +1068,6 @@ nav a .nav-symbol {
 
 .github-cta .cta-link:hover {
     background: rgba(136, 192, 208, 0.1);
-    box-shadow: 0 0 12px rgba(136, 192, 208, 0.2);
 }
 
 @media (max-width: 768px) {

@@ -377,6 +377,17 @@ nav a .nav-symbol {
     opacity: 0.7;
 }
 
+.quote-label-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: all var(--transition-normal);
+}
+
+.quote-label-link:hover .quote-label {
+    opacity: 1;
+    color: var(--text-primary);
+}
+
 .quote-link {
     display: inline-block;
     text-decoration: none;
@@ -618,6 +629,22 @@ nav a .nav-symbol {
 
 .extra-card li {
     margin: 6px 0;
+}
+
+.book-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    border-bottom: 1px dashed transparent;
+}
+
+.book-link:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.book-link em {
+    font-style: italic;
 }
 
 @media (max-width: 900px) {

@@ -98,20 +98,6 @@ const projectData = {
         deployed: 'https://degrozer.github.io/Holocaust-Educational-Website/',
         tags: ['HTML', 'CSS', 'JavaScript']
     },
-    'volleyball-world-rankings': {
-        title: 'Volleyball World Rankings',
-        subtitle: '[WIP: Still in Development] Data visualization Practice',
-        description: 'An interactive site that displays the real time senior volleyball world rankings with clear tables and country flags, optimized for quick scan and responsive viewing.',
-        learnings: [
-            'Rendering dynamic data tables with vanilla JavaScript',
-            'Responsive layout for wide tables on mobile',
-            'Using GitHub Pages for static site hosting'
-        ],
-        image: 'https://opengraph.githubassets.com/1/DeGrozer/volleyball-world-rankings',
-        github: 'https://github.com/DeGrozer/volleyball-world-rankings',
-        deployed: 'https://degrozer.github.io/volleyball-world-rankings/',
-        tags: ['HTML', 'CSS', 'JavaScript']
-    },
     'php-login-system': {
         title: 'PHP Login System',
         subtitle: 'Auth flow practice',
@@ -140,6 +126,20 @@ const projectData = {
         github: 'https://github.com/DeGrozer/QRScanner',
         deployed: '',
         tags: ['RN', 'Expo', 'TypeScript']
+    },
+    'asogtbi': {
+        title: 'ASOGTBI Official Website',
+        subtitle: 'Production / Featured Project',
+        description: 'The official website for the Apostolic School of Theology (ASOGTBI). Built to serve as the main information hub for students and visitors, offering a responsive and accessible design across all devices.',
+        learnings: [
+            'Client communication and requirements gathering',
+            'Deploying and maintaining production websites',
+            'Optimizing performance and responsive design'
+        ],
+        image: 'https://image.thum.io/get/width/1200/crop/800/https://asogtbi.com/',
+        github: '',
+        deployed: 'https://asogtbi.com',
+        tags: ['Web', 'Design', 'CMS']
     }
 };
 

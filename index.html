@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jetbrains-mono" rel="stylesheet">
 
     <!-- SOCIAL MEDIA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -28,15 +29,21 @@
 <body>
     <div class="progress-bar"></div>
     <header>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+        </button>
         <div class="logo">~/andrew</div>
-        <nav>
-            <a href="#home"><span class="nav-symbol">[</span>home<span class="nav-symbol">]</span></a>
-            <a href="#aboutme"><span class="nav-symbol">[</span>about<span class="nav-symbol">]</span></a>
-            <a href="#techstack"><span class="nav-symbol">[</span>stack<span class="nav-symbol">]</span></a>
-            <a href="#works"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
-            <a href="#seminars"><span class="nav-symbol">[</span>certs<span class="nav-symbol">]</span></a>
-            <a href="#contacts"><span class="nav-symbol">[</span>contact<span class="nav-symbol">]</span></a>
+        <nav class="site-nav" id="siteNav">
+            <a href="#home" class="nav-link active" data-section="home"><span class="nav-symbol">[</span>home<span class="nav-symbol">]</span></a>
+            <a href="#aboutme" class="nav-link" data-section="aboutme"><span class="nav-symbol">[</span>about<span class="nav-symbol">]</span></a>
+            <a href="#techstack" class="nav-link" data-section="techstack"><span class="nav-symbol">[</span>stack<span class="nav-symbol">]</span></a>
+            <a href="#works" class="nav-link" data-section="works"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
+            <a href="#seminars" class="nav-link" data-section="seminars"><span class="nav-symbol">[</span>certs<span class="nav-symbol">]</span></a>
+            <a href="#contacts" class="nav-link" data-section="contacts"><span class="nav-symbol">[</span>contact<span class="nav-symbol">]</span></a>
         </nav>
+        <div class="nav-overlay" id="navOverlay"></div>
     </header>
     
 

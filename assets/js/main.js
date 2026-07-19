@@ -80,6 +80,102 @@ function updateUptime() {
 }
 
 // ========================================
+// MOBILE NAVIGATION
+// ========================================
+const navToggle = document.querySelector('.nav-toggle');
+const siteNav = document.getElementById('siteNav');
+const navOverlay = document.getElementById('navOverlay');
+const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+
+function setActiveNav(sectionId) {
+    navLinks.forEach(link => {
+        const isActive = link.dataset.section === sectionId;
+        link.classList.toggle('active', isActive);
+    });
+}
+
+function openMobileNav() {
+    if (!siteNav || !navOverlay) return;
+    siteNav.classList.add('active');
+    navOverlay.classList.add('active');
+    document.body.classList.add('nav-open');
+    if (navToggle) {
+        navToggle.classList.add('active');
+        navToggle.setAttribute('aria-expanded', 'true');
+    }
+}
+
+function closeMobileNav() {
+    if (!siteNav || !navOverlay) return;
+    siteNav.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    if (navToggle) {
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+    }
+}
+
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.contains('active');
+        isOpen ? closeMobileNav() : openMobileNav();
+    });
+}
+
+if (navOverlay) {
+    navOverlay.addEventListener('click', closeMobileNav);
+}
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const sectionId = link.dataset.section;
+        if (sectionId) {
+            setActiveNav(sectionId);
+        }
+        if (window.innerWidth <= 768) {
+            closeMobileNav();
+        }
+    });
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeMobileNav();
+    }
+});
+
+document.addEventListener('click', (event) => {
+    if (window.innerWidth <= 768 && siteNav && siteNav.classList.contains('active')) {
+        const clickedInsideNav = siteNav.contains(event.target);
+        const clickedToggle = navToggle ? navToggle.contains(event.target) : false;
+        if (!clickedInsideNav && !clickedToggle) {
+            closeMobileNav();
+        }
+    }
+});
+
+const sections = Array.from(document.querySelectorAll('section[id]'));
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            setActiveNav(entry.target.id);
+        }
+    });
+}, {
+    rootMargin: '-35% 0px -55% 0px',
+    threshold: 0.1
+});
+
+sections.forEach(section => sectionObserver.observe(section));
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        closeMobileNav();
+    }
+});
+
+// ========================================
 // PROJECT MODAL
 // ========================================
 const projectData = {
@@ -97,6 +193,20 @@ const projectData = {
         github: 'https://github.com/DeGrozer/Holocaust-Educational-Website',
         deployed: 'https://degrozer.github.io/Holocaust-Educational-Website/',
         tags: ['HTML', 'CSS', 'JavaScript']
+    },
+    'volleyball-world-rankings': {
+        title: '3D Volleyball World Rankings',
+        subtitle: '[WIP] Passion Project',
+        description: 'An interactive 3D globe web application exploring real-time senior volleyball world rankings. Currently developing a custom interactive geographic visualization to scan and explore national teams across the world.',
+        learnings: [
+            'Implementing 3D graphics in the browser using Three.js',
+            'Visualizing geographic and structural data on a 3D sphere',
+            'Optimizing performance for interactive 3D canvas elements'
+        ],
+        image: 'https://opengraph.githubassets.com/1/DeGrozer/3dfivbranking',
+        github: 'https://github.com/DeGrozer/3dfivbranking',
+        deployed: 'https://degrozer.github.io/3dfivbranking/globe-lineart/',
+        tags: ['Three.js', 'JS', 'DataViz']
     },
     'php-login-system': {
         title: 'PHP Login System',

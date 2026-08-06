@@ -34,13 +34,14 @@
             <span class="nav-toggle-line"></span>
             <span class="nav-toggle-line"></span>
         </button>
-        <div class="logo">~/andrew</div>
+        <a class="logo" href="#home" aria-label="Go to home">~/andrew</a>
         <nav class="site-nav" id="siteNav">
             <a href="#home" class="nav-link active" data-section="home"><span class="nav-symbol">[</span>home<span class="nav-symbol">]</span></a>
             <a href="#aboutme" class="nav-link" data-section="aboutme"><span class="nav-symbol">[</span>about<span class="nav-symbol">]</span></a>
             <a href="#techstack" class="nav-link" data-section="techstack"><span class="nav-symbol">[</span>stack<span class="nav-symbol">]</span></a>
-            <a href="#works" class="nav-link" data-section="works"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
+            <a href="#featured" class="nav-link" data-section="featured"><span class="nav-symbol">[</span>works<span class="nav-symbol">]</span></a>
             <a href="#seminars" class="nav-link" data-section="seminars"><span class="nav-symbol">[</span>certs<span class="nav-symbol">]</span></a>
+            <a href="#moreprojects" class="nav-link" data-section="moreprojects"><span class="nav-symbol">[</span>more projects<span class="nav-symbol">]</span></a>
             <a href="#contacts" class="nav-link" data-section="contacts"><span class="nav-symbol">[</span>contact<span class="nav-symbol">]</span></a>
         </nav>
         <div class="nav-overlay" id="navOverlay"></div>
@@ -76,7 +77,7 @@
                         <p><span class="label">Uptime:</span> <span id="uptime">calculating...</span></p>
                         <p><span class="label">Shell:</span> bash</p>
                         <p><span class="label">Status:</span> <span class="status-available">● available</span></p>
-                        <p><span class="label">Focus:</span>Job Hunting</p>
+                        <p><span class="label">Focus:</span>  Job Hunting</p>
                         <p><a href="#aboutme"><span class="label">Read More »</span></a></p>
                     </div>
                 </div>
@@ -106,11 +107,11 @@
             <p class="about-intro">Hi, I'm Andrew</p>
             
             <p class="about-text">
-                I’m a 22-year-old IT student at Camarines Sur Polytechnic Colleges. I didn’t arrive here by accident, I always had curiosity with computers started long before I knew what “IT” even meant. I’ve always been the type to click around, break things, fix them, and wonder how everything works behind the screen.
+                I’m a 22-year-old graduate student in Information Technology at Camarines Sur Polytechnic Colleges. I didn’t arrive here by accident. My curiosity with computers started long before I knew what “IT” even meant. I’ve always been the type to click around, break things, fix them, and wonder how everything works behind the screen.
             </p>
             
             <p class="about-text">
-                Over the years, that curiosity turned into something more intentional. What began as casually playing with programs and spending too much time on the internet slowly became a path I chose to take seriously. These days, I’m learning by building, like exploring web development, UI/UX, and cybersecurity through hands-on projects and trial and error.
+                Over the years, that curiosity turned into something more intentional. What began as casually playing with programs and spending too much time on the internet slowly became a path I chose to take seriously. These days, I’m learning by building, exploring web development, UI/UX, and cybersecurity through hands-on projects and trial and error.
             </p>
             
             <p class="about-text">
@@ -227,6 +228,21 @@
                 </a>
                 <a href="https://github.com/DeGrozer/asog-website" target="_blank" class="social-link" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 10px 16px;">
                     <i class="devicon-github-original" style="font-size: 1.2rem;"></i> View Repository
+                </a>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 2.5rem;">
+            <h3 style="font-size: 2rem; color: var(--text-primary); margin-bottom: 0.5rem; font-family: 'Fira Code', monospace;">Volleywood</h3>
+            <p style="color: #88c0d0; margin-bottom: 1rem; font-size: 1.1rem;">WordPress Developer</p>
+            
+            <p class="about-text" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; max-width: 800px;">
+                Updated <a href="https://old.volleywood.net" target="_blank" style="color: #88c0d0; text-decoration: none;">old.volleywood.com</a> and helped keep the site clean, responsive, and ready for ongoing volleyball content.
+            </p>
+            
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://old.volleywood.com" target="_blank" class="social-link" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 10px 16px;">
+                    <i class="fas fa-external-link-alt"></i> Visit Volleywood
                 </a>
             </div>
         </div>
@@ -385,6 +401,10 @@
                 <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg" alt="Lux" title="League of Legends">
                 <span>LoL</span>
             </a>
+            <a href="https://m.mobilelegends.com/en" target="_blank" class="interest-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Mobile_Legends_Bang_Bang_logo.png/220px-Mobile_Legends_Bang_Bang_logo.png" alt="Mobile Legends" title="Mobile Legends: Bang Bang">
+                <span>Mobile Legends</span>
+            </a>
             <a href="https://undertale.com/" target="_blank" class="interest-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OCNBv-W2cgQOeLlkCj9YtCHkrINw9IQxkg&s" alt="Undertale" title="Undertale">
                 <span>Undertale</span>
@@ -419,14 +439,6 @@
                     <span class="seminar-title">TOPCIT Level 2</span>
                 </div>
                 <span class="seminar-org">National IT Industry Promotion Agency (NIPA)</span>
-            </div>
-            
-            <div class="seminar-item">
-                <div class="seminar-main">
-                    <i class="fas fa-shield-halved"></i>
-                    <span class="seminar-title">Ethical Hacking</span>
-                </div>
-                <span class="seminar-org">TCM Security</span>
             </div>
             
             <div class="seminar-item">
@@ -469,8 +481,9 @@
 </section>
 
 <!-- Works Section -->
-<section class="works-section" id="works">
+<section class="works-section" id="moreprojects">
     <div class="works-container">
+        <h2 class="section-title more-projects-header" style="text-align: left;">More Projects</h2>
         <div class="terminal-header-bar">
             <span class="terminal-dot red"></span>
             <span class="terminal-dot yellow"></span>
@@ -566,7 +579,7 @@
                 <a href="https://github.com/DeGrozer" target="_blank" class="cta-link">
                     <i class="fab fa-github"></i> Visit GitHub Profile
                 </a>
-            </div>
+                </div>
         </div>
     </div>
 </section>
